@@ -8,5 +8,18 @@
         }
       }
     ]
-  ]
+  ],
+  "plugins": [
+    [
+      "inline-react-svg",
+      {
+        "svgo": false
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "sourceMaps": "inline"
+    }
+  }
 }

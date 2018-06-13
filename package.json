@@ -4,13 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "BABEL_ENV=test mocha -r @babel/register 'test.js'"
   },
   "author": "Sojung Park",
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.0.0-beta.51",
     "@babel/core": "^7.0.0-beta.51",
+    "@babel/register": "^7.0.0-beta.51",
+    "babel-plugin-inline-react-svg": "^0.5.2",
+    "chai": "^4.1.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "exenv": "^1.2.2",
+    "expect": "^23.1.0",
+    "jsdom": "^11.11.0",
+    "lodash.find": "^4.6.0",
+    "lodash.get": "^4.4.2",
     "next": "^6.0.3",
     "rewire": "^4.0.1"
   }

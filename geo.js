@@ -1,15 +1,7 @@
+import ExEnv from 'exenv'
 import find from 'lodash.find'
 import get from 'lodash.get'
 import { setCookie, clearCookie } from './cookies'
-
-var fs = require("fs"),
-    path = "/to-read";
-
-export function readSomethingFromFileSystem(cb) {
-    console.log("Reading from file system ...");
-    fs.readFile(path, "utf8", cb);
-}
-
 
 // LOCALES
 // ------------------------------------------------------------
