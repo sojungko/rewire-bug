@@ -1,11 +1,11 @@
-// https://github.com/airbnb/enzyme/blob/master/docs/guides/jsdom.md
+// // https://github.com/airbnb/enzyme/blob/master/docs/guides/jsdom.md
 
 const { JSDOM } = require('jsdom')
 
-// setup the simplest document possible
+// // setup the simplest document possible
 const doc = new JSDOM('<!doctype html><html><body></body></html>')
 
-// get the window object out of the document
+// // get the window object out of the document
 const { window } = doc
 
 function copyProps (src, target) {
@@ -21,10 +21,10 @@ global.HTMLElement = window.HTMLElement
 global.navigator = {
   userAgent: 'node.js',
 }
-copyProps(window, global)
+// copyProps(window, global)
 
-// stub for react-slick
-// https://github.com/akiran/react-slick/issues/348
+// // stub for react-slick
+// // https://github.com/akiran/react-slick/issues/348
 window.matchMedia = window.matchMedia || function () {
   return {
     matches: false,
